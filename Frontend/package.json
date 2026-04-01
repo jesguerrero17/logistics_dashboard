@@ -1,0 +1,28 @@
+{
+  "name": "supply-chain-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Supply Chain Performance Analytics Dashboard",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.453.0",
+    "papaparse": "^5.5.3",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "recharts": "^2.15.2",
+    "wouter": "^3.3.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@tailwindcss/vite": "^4.1.3",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^4.1.14",
+    "vite": "^7.1.7"
+  }
+}

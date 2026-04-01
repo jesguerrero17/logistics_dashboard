@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1F3A5F;
+  --color-primary-foreground: #FFFFFF;
+  --color-accent: #00D9FF;
+  --color-accent-foreground: #1F3A5F;
+  --color-background: #FFFFFF;
+  --color-foreground: #1F3A5F;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1F3A5F;
+  --color-secondary: #F0F4F8;
+  --color-secondary-foreground: #2D5A8C;
+  --color-muted: #E8EAED;
+  --color-muted-foreground: #6B7280;
+  --color-border: #E8EAED;
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+  --color-sidebar: #F8F9FA;
+  --color-sidebar-foreground: #1F3A5F;
+  --color-sidebar-accent: #E8EAED;
+  --color-sidebar-primary: #1F3A5F;
+  --color-sidebar-primary-foreground: #FFFFFF;
+}
+
+:root {
+  --primary: #1F3A5F;
+  --primary-foreground: #FFFFFF;
+  --accent: #00D9FF;
+  --accent-foreground: #1F3A5F;
+  --background: #FFFFFF;
+  --foreground: #1F3A5F;
+  --card: #FFFFFF;
+  --card-foreground: #1F3A5F;
+  --secondary: #F0F4F8;
+  --secondary-foreground: #2D5A8C;
+  --muted: #E8EAED;
+  --muted-foreground: #6B7280;
+  --border: #E8EAED;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --sidebar: #F8F9FA;
+  --sidebar-foreground: #1F3A5F;
+  --sidebar-accent: #E8EAED;
+  --sidebar-primary: #1F3A5F;
+  --sidebar-primary-foreground: #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .kpi-card {
+    @apply rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md;
+  }
+
+  .kpi-value {
+    @apply text-3xl font-bold text-primary;
+  }
+
+  .kpi-label {
+    @apply text-sm font-semibold uppercase tracking-wide text-muted-foreground;
+  }
+
+  .chart-container {
+    @apply rounded-lg border border-gray-200 bg-white p-6 shadow-sm;
+  }
+
+  .sidebar-nav-item {
+    @apply rounded-md px-4 py-3 text-sm font-medium transition-colors duration-200 hover:bg-sidebar-accent;
+  }
+
+  .sidebar-nav-item.active {
+    @apply bg-sidebar-primary text-sidebar-primary-foreground shadow-md;
+  }
+}
